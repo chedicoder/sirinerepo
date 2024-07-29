@@ -13,5 +13,5 @@ jobs:
         with:
           package-name: nginx # Nom du package
           package-type: container  
-          package-version-ids: v2 # ID de la version à supprimer
+          package-version-ids: sha256:4ac65f23061de2faef157760fa2125c954b5b064bc25e10655e90bd92bc3b354 # ID de la version à supprimer
           token: ${{ secrets.TOKEN }}  # Utilisez le secret pour le token
