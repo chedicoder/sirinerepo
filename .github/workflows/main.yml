@@ -14,4 +14,4 @@ jobs:
           package-name: nginx # Nom du package
           package-type: container  
           package-version-ids: v2 # ID de la version à supprimer
-          token: TOKEN # Utilisez le secret pour le token
+          token: ${{ secrets.TOKEN }}  # Utilisez le secret pour le token
