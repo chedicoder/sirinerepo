@@ -1,0 +1,17 @@
+name: Delete Nginx v1
+
+on:
+  workflow_dispatch:
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Delete Docker Image Version v1
+        uses: actions/delete-package-versions@v5
+        with:
+          package-name: nginx # Nom du package
+          package-type: container  
+          package-version-ids: v2 # ID de la version à supprimer
+          token: TOKEN # Utilisez le secret pour le token
